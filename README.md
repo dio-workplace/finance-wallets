@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# Projeto de Estudo: Finance Wallets
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+Este é um projeto de estudo construído com React, TypeScript, Vite e Tailwind CSS. Ele consiste em uma página de Carteiras Financeiras que oferece a funcionalidade de "adicionar carteira" e "remover carteira". O projeto também é responsivo.
 
-Currently, two official plugins are available:
+## Funcionalidades
+- Adicionar Carteira: Adicione novas carteiras financeiras à sua página, com nome personalizado e valor inicial.
+- Remover Carteira: Remova carteiras financeiras existentes da sua página.
+  
+## Tecnologias Utilizadas
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demonstração
+Uma demonstração do projeto pode ser acessada através do link...
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
