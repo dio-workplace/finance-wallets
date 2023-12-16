@@ -1,15 +1,21 @@
 import { FormEvent } from "react";
 
+type Wallet = {
+    id: number,
+    name: string,
+    amount: string
+}
+
 type ModalWalletProps = {
     isOpen: boolean
     isClosed: () => void
-    wallets: Array<{ id: number, name: string, amount: string }>;
+    wallets: Wallet[];
     setWallets: CallableFunction;
 }
 
 let newName = ''
 let amount = ''
-let newId = '4'
+let newId = 4
 
 export function ModalWallet({ isOpen, isClosed, wallets, setWallets }: ModalWalletProps) {
 
@@ -61,7 +67,7 @@ export function ModalWallet({ isOpen, isClosed, wallets, setWallets }: ModalWall
                                             type="hidden"
                                             value="5"
                                             onChange={(event) => {
-                                                newId = event.target.value
+                                                newId = parseInt(event.target.value)
                                             }} />
 
                                         <label htmlFor="AccountName" className="block text-md font-medium pt-4 leading-6">Nome</label>
@@ -95,12 +101,10 @@ export function ModalWallet({ isOpen, isClosed, wallets, setWallets }: ModalWall
                                     </form>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             )}
         </>
     )
